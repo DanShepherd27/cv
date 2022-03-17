@@ -1,0 +1,64 @@
+html{
+    font-size: 100%;
+    width: 70vw;
+    margin: auto;
+}
+@media screen and (max-width: 992px){
+    html{width: 100vw;}
+}
+
+header{
+    border-bottom: 0.5rem solid rgb(158, 112, 51);
+}
+
+header > h1{
+    font-size: 4rem;
+    font-family: 'Bebas neue';
+    text-align: center;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+header > h2{
+    font-size: 2rem;
+    font-family: 'montserrat';
+    font-variant: all-small-caps;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+body{
+    border: 0.5rem solid rgb(158, 112, 51);
+    margin: auto;
+    height: calc(100vh - 1rem);
+}
+
+.grid-container{
+    display: grid;
+    background-color: lightblue;
+    padding: 10px;
+    
+}
+
+.inner-grid-container{
+    display: grid;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(158, 112, 51);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+}
