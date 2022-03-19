@@ -1,14 +1,43 @@
-html{
-    font-size: 100%;
-    width: 70vw;
-    margin: auto;
-}
-@media screen and (max-width: 992px){
-    html{width: 100vw;}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 
+html{
+    font-family: 'montserrat';
+    font-size: 100%;
+    width: 70vw;
+    margin: 2rem auto 2rem auto;
+    /* background-color: rgb(194, 170, 135); */
+    background-image: url("nick-reynolds-Im997E8lWho-unsplash.jpg");
+    background-size: cover;
+}
+@media screen and (max-width: 992px){
+    html{width: 90vw;}
+}
+
+body{
+    border: 0.5rem solid #E68E36;
+    margin: auto;
+    min-height: calc(100vh - 1rem);
+    /* background-image: url("nick-reynolds-Im997E8lWho-unsplash.jpg");
+    background-size: cover; */
+    background-color: #461E52;
+    color: #461E52;
+}
+
+
+
 header{
-    border-bottom: 0.5rem solid rgb(158, 112, 51);
+    border-bottom: 0.5rem solid #E68E36;
+    /* background-color: rgb(187, 151, 96); */
+    
+    /* background-color: #461E52; */
+
+    color: #E68E36 ;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 header > h1{
@@ -16,49 +45,79 @@ header > h1{
     font-family: 'Bebas neue';
     text-align: center;
     margin: 0;
-    margin-top: 2rem;
 }
 
 header > h2{
     font-size: 2rem;
-    font-family: 'montserrat';
     font-variant: all-small-caps;
     text-align: center;
     margin: 0;
-    margin-bottom: 1rem;
 }
 
-body{
-    border: 0.5rem solid rgb(158, 112, 51);
-    margin: auto;
-    height: calc(100vh - 1rem);
+h1{
+    font-family: 'bebas neue';
+    font-weight: lighter;
+}
+
+h2{
+    font-variant: all-small-caps;
+    font-size: 1.2rem;
+}
+
+a:link, 
+a:visited,
+a:active{
+    color: #461E52;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.date{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+main{
+    min-height: calc(100vh - 11.6rem);
 }
 
 .grid-container{
     display: grid;
-    background-color: lightblue;
-    padding: 10px;
-    
+    grid-template-columns: 1fr 2fr;
+    /* background-color: rgb(255, 255, 255);
+    padding: 10px; */
+    min-height: inherit;
 }
 
 .inner-grid-container{
     display: grid;
-    background-color: lightblue;
-    padding: 10px;
+    padding: 1rem;
 }
 
-.item1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background-color: rgb(158, 112, 51);
+.left-column{
+    background: linear-gradient(to bottom, rgb(230, 142, 54) ,#DD517F);   
     text-align: center;
-    padding: 20px 0;
+    padding: 1.5rem 1.5rem;
 }
 
-.item2{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    background-color: rgb(255, 255, 255);
+.right-column{
+    /* background-image: url("cristian-s-W1fZKMIlkpM-unsplash.jpg"); */
+    
+    background: linear-gradient(#461E52,#556DC8);
     text-align: center;
-    padding: 20px 0;
+    padding: 1.5rem 1.5rem;
+    color: #E68E36;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.material-icons{
+    vertical-align: bottom;
 }
